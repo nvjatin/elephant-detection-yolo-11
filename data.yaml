@@ -1,0 +1,55 @@
+# Elephant Detection Dataset Configuration
+# YOLOv8 format
+# 
+# IMPORTANT: All paths must be absolute and point to external SSD
+# 
+# Directory structure expected:
+#   datasets/
+#   ├── data.yaml (this file)
+#   ├── train/
+#   │   ├── images/
+#   │   │   ├── img001.jpg
+#   │   │   └── ...
+#   │   └── labels/
+#   │       ├── img001.txt
+#   │       └── ...
+#   ├── val/
+#   │   ├── images/
+#   │   └── labels/
+#   └── test/  (optional)
+#       ├── images/
+#       └── labels/
+
+# Absolute path to dataset root (update for Windows local path)
+path: "c:\\Users\\pochi\\Downloads\\Elephant-Detection\\Elephant-Detection\\datasets"
+
+# Relative paths to splits (relative to 'path' above)
+train: train/images
+val: val/images
+test: test/images  # Optional
+
+# Number of classes
+nc: 1
+
+# Class names (index 0 = elephant)
+names:
+  0: elephant
+
+# Alternative format (also valid):
+# names: ['elephant']
+
+# =============================================================================
+# LABEL FORMAT (YOLO format in .txt files)
+# =============================================================================
+# Each image needs a corresponding .txt file with same name
+# Format per line: <class_id> <x_center> <y_center> <width> <height>
+# All values normalized to [0, 1]
+#
+# Example (labels/img001.txt):
+#   0 0.5 0.5 0.3 0.4
+#   0 0.2 0.7 0.15 0.25
+#
+# This means:
+#   - First elephant: center at (50%, 50%), size 30% x 40% of image
+#   - Second elephant: center at (20%, 70%), size 15% x 25% of image
+# =============================================================================

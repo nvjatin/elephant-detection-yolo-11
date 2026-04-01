@@ -1,0 +1,13 @@
+# Core dependencies
+ultralytics>=8.0.0
+opencv-python>=4.8.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Dataset downloads
+kaggle>=1.5.0
+roboflow>=1.0.0
+fiftyone>=0.23.0
+
+# Apple Silicon optimizations (auto-installed with torch)
+# No additional packages needed - PyTorch includes MPS support
