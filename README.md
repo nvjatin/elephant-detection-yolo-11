@@ -2,7 +2,7 @@
 
 A YOLOv11-based computer vision project for detecting elephants in images and video.  
 This project supports training, validation, prediction, and export workflows using a custom elephant dataset.
-
+Trained on sri-lankan-wild-elephant-dataset by gunarakulangr (kaggle)
 ## Features
 
 - Train an elephant detector with YOLOv11m
@@ -73,17 +73,14 @@ models\elephant_model\
 
 ```text
 .
-├── backend/
 ├── config/
 ├── datasets/
 ├── detect.py
-├── frontend/
 ├── logs/
 ├── models/
 ├── outputs/
 ├── runs/
 ├── scripts/
-├── sri-lankan-wild-elephant-dataset/
 ├── training.py
 └── requirements.txt
 ```
